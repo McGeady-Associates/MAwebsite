@@ -1,15 +1,17 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "masite",
+  "description": "New and improved website for McGeady & Associates LLC.",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Tony Xu",
   "dependencies": {
     "gatsby": "^1.9.63",
     "gatsby-link": "^1.6.21",
     "gatsby-plugin-react-helmet": "^1.0.5"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "M&A",
+    "McGeady & Associates"
   ],
   "license": "MIT",
   "main": "n/a",
