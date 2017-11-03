@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import logo from '../../static/img/logo.jpg'
 
-import './index.css'
+import './index.scss'
 
 const Header = () => (
   <div
@@ -45,7 +45,6 @@ const TemplateWrapper = ({ children }) => (
     <div
       style={{
         margin: '0 auto',
-        padding: '0px 1.0875rem 1.45rem',
         paddingTop: 0,
       }}
     >
