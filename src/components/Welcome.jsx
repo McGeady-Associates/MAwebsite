@@ -27,7 +27,6 @@ const Welcome = (props) => {
     </p>
     </section>
   )
-
 }
 
 export default Welcome;
