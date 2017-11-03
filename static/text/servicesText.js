@@ -1,0 +1,17 @@
+module.exports = [
+  `Diversity & Inclusion consulting and conferences`,
+  `Legal conferences (in-house and external)`,
+  `Strategic event consulting`,
+  `Gold tournament planning`,
+  `Galas and special celebrations`,
+  `Event budget planning and management`,
+  `Venue selection and sourcing`,
+  `Vendor sourcing and contracting`,
+  `Speaker selection and coordination`,
+  `Sponsorship development and strategy`,
+  `Online registration`,
+  `Database management and registration file maintenance`,
+  `Transportation planning`,
+  `On-site staffing and management`,
+  `Post-event evaluation and event services`,
+]

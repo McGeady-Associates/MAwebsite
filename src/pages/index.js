@@ -8,7 +8,6 @@ import EmailUs from '../components/EmailUs.jsx';
 
 const IndexPage = () => (
   <div>
-    <h1>Hi people</h1>
     <Welcome />
     <AboutUs />
     <Services />

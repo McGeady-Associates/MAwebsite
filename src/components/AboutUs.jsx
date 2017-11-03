@@ -28,9 +28,7 @@ const AboutUs = (props) => {
       </div>
     </div>
     </section>
-
   )
-
 }
 
 export default AboutUs;
