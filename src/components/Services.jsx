@@ -3,7 +3,7 @@ import ServicesText from '../../static/text/servicesText';
 
 const Services = (props) => {
   return (
-    <section id="AboutUsContainer"
+    <section id="ServicesContainer"
       className="bg-primary text-white text-center"
       style={{backgroundColor: '#7b9b4a', height: '30%'}}
     >
