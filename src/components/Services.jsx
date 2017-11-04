@@ -5,7 +5,7 @@ const Services = (props) => {
   return (
     <section id="ServicesContainer"
       className="bg-primary text-white text-center"
-      style={{backgroundColor: '#7b9b4a', height: '30%'}}
+      style={{backgroundColor: '#b4c889', height: '30%'}}
     >
     <h1 style={{display: 'flex', justifyContent: 'center'}}>
       McGeady & Associates Services
