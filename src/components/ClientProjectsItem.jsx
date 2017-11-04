@@ -6,7 +6,7 @@ const ClientProjectsItem = (props) => {
       <div style={{display: 'flex', justifyContent: 'center'}}>
         <p><strong>{props.title}</strong></p>
       </div>
-      <div style={{display: 'flex'}}>
+      <div style={{display: 'flex', flex: '3', justifyContent: 'center', alignItems: 'center'}}>
         <p>{props.details}</p>
       </div>
     </div>
