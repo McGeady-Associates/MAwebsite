@@ -14,9 +14,9 @@ const Services = (props) => {
       <div style={{flex: 8}}>
         <ul>
           {
-            ServicesText.map(service => {
+            ServicesText.map((service, index) => {
               return (
-                <li>{service}</li>
+                <li key={index}>{service}</li>
               );
             })
           }

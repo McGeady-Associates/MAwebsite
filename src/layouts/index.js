@@ -2,9 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+import 'bootstrap/dist/css/bootstrap.css';
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import logo from '../../static/img/logo.jpg'
 
-import './index.scss'
+import './index.css'
 
 const Header = () => (
   <div
@@ -17,17 +19,21 @@ const Header = () => (
         margin: '0',
       }}
     >
-      <h1 style={{ margin: 0}}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          <img src={logo} height="100" width="350"/>
-        </Link>
-      </h1>
+      <Navbar>
+        <Navbar.Header>
+          <a href="#"><img src={logo} style={{width: '50%'}}/></a>
+      <Navbar.Toggle />
+    </Navbar.Header>
+    <Navbar.Collapse>
+      <Nav>
+        <NavItem eventKey={1} href="#">About Us</NavItem>
+        <NavItem eventKey={2} href="#">Services</NavItem>
+        <NavItem eventKey={3} href="#">Key Client Engagements</NavItem>
+        <NavItem eventKey={4} href="#">Contact Us</NavItem>
+      </Nav>
+    </Navbar.Collapse>
+      </Navbar>
+
     </div>
   </div>
 )
