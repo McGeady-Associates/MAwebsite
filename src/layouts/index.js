@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import logo from '../../static/img/logo.jpg'
 
-import './index.scss'
+import './index.css'
 
 const Header = () => (
   <div
