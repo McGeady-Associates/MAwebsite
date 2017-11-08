@@ -11,17 +11,14 @@ import './index.css'
 class Header extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      navHeight: 50
-    }
   }
 
   render() {
     return (
-      <Navbar fixedTop>
-        <Navbar.Header style={{maxWidth: '40%'}}>
-          <Navbar.Toggle />
-          <a href="#"><img src={logo} style={{width: '50%'}}/></a>
+      <Navbar fixedTop style={{backgroundColor: 'white', maxHeight: 70}}>
+        <Navbar.Toggle />
+        <Navbar.Header style={{display: 'flex', maxWidth: '40%', justifyContent: 'center', alignItems: 'center'}}>
+          <a href="#"><img src={logo} style={{maxWidth: '60%', maxHeight: '60%'}}/></a>
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
@@ -37,7 +34,7 @@ class Header extends Component {
 }
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div style={{backgroundColor: 'white'}}>
     <Helmet
       title="McGeady & Associates LLC"
       meta={[
@@ -49,7 +46,7 @@ const TemplateWrapper = ({ children }) => (
     <div
       style={{
         margin: '0 auto',
-        paddingTop: 60,
+        paddingTop: 70,
       }}
     >
       {children()}
@@ -62,15 +59,3 @@ TemplateWrapper.propTypes = {
 }
 
 export default TemplateWrapper
-
-//
-// <div
-//   style={{
-//     background: 'white',
-//   }}
-// >
-//   <div
-//     style={{
-//       margin: '0',
-//     }}
-//   >
