@@ -15,7 +15,6 @@ const IndexPage = () => (
     <ClientProjects />
     <Testimonials />
     <EmailUs />
-    <Link to="/404"><a>Some link</a></Link>
   </div>
 )
 
