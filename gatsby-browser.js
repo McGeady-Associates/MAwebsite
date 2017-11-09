@@ -9,7 +9,7 @@ exports.onRouteUpdate = (locationHash) => {
     } else {
       setTimeout(() => {
         let a = document.querySelector(`#${location}`).scrollIntoView();
-        window.scrollBy(0, -70);
+        window.scrollBy(0, -60);
       }, 0);
     }
   }

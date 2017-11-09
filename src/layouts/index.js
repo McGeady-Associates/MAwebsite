@@ -17,8 +17,8 @@ class Header extends Component {
     return (
       <Navbar fixedTop style={{backgroundColor: 'white', maxHeight: 70}}>
         <Navbar.Toggle />
-        <Navbar.Header style={{display: 'flex', maxWidth: '40%', justifyContent: 'center', alignItems: 'center'}}>
-          <a href="#"><img src={logo} style={{maxWidth: '60%', maxHeight: '60%'}}/></a>
+        <Navbar.Header style={{maxWidth: '30%'}}>
+          <a href="#"><img src={logo} style={{maxWidth: '70%', maxHeight: '70%'}}/></a>
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
@@ -46,7 +46,7 @@ const TemplateWrapper = ({ children }) => (
     <div
       style={{
         margin: '0 auto',
-        paddingTop: 70,
+        paddingTop: 60,
       }}
     >
       {children()}
