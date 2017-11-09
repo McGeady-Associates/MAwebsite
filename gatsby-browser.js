@@ -1,23 +1,16 @@
-// import { anchorate } from 'anchorate'
-//
-// exports.onRouteUpdate = () => {
-//   console.log('inside onRouteChnage')
-//   anchorate()
-// }
+exports.onRouteUpdate = (locationHash) => {
+  if (locationHash.location.hash) {
+    let location = locationHash.location.hash.slice(2);
 
-
-
-
-
-
-
-
-exports.onRouteUpdate = (location) => {
-  if (location.location.hash) {
-    location = location.location.hash.slice(2);
-    setTimeout(() => {
-      let a = document.querySelector(`#${location}`).scrollIntoView();
-      window.scrollBy(0, -70);
-    }, 0);
-  } else {}
+    if (location === 'ContactUsContainer') {
+      setTimeout(() => {
+        let a = document.querySelector(`#${location}`).scrollIntoView(false);
+      }, 0);
+    } else {
+      setTimeout(() => {
+        let a = document.querySelector(`#${location}`).scrollIntoView();
+        window.scrollBy(0, -70);
+      }, 0);
+    }
+  }
 };

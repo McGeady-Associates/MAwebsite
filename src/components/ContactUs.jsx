@@ -15,9 +15,6 @@ const ContactUs = (props) => {
         <p style={{marginBottom: 0}}>{emailUsText.address}</p>
         <p>{emailUsText.contacts}</p>
       </div>
-      <div>
-
-      </div>
     </div>
     </section>
   )
