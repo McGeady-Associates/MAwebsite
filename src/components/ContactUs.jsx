@@ -1,9 +1,9 @@
 import React from 'react';
 import emailUsText from '../../static/text/emailUsText';
 
-const EmailUs = (props) => {
+const ContactUs = (props) => {
   return (
-    <section id="EmailUsContainer"
+    <section id="ContactUsContainer"
       className="bg-primary text-white text-center"
       style={{height: '30%'}}
     >
@@ -15,13 +15,10 @@ const EmailUs = (props) => {
         <p style={{marginBottom: 0}}>{emailUsText.address}</p>
         <p>{emailUsText.contacts}</p>
       </div>
-      <div>
-
-      </div>
     </div>
     </section>
   )
 
 }
 
-export default EmailUs;
+export default ContactUs;

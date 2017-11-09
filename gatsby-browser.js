@@ -1,11 +1,16 @@
-exports.onRouteUpdate = (location) => {
-  // console.log('location: ', location)
-  if (location.hash) {
-    // console.log('inside onRouteUpdate')
-    setTimeout(() => {
-      document.querySelector(`${location.hash}`).scrollIntoView();
-    }, 0);
-  } else {
-    // console.log('browser API, route change');
+exports.onRouteUpdate = (locationHash) => {
+  if (locationHash.location.hash) {
+    let location = locationHash.location.hash.slice(2);
+
+    if (location === 'ContactUsContainer') {
+      setTimeout(() => {
+        let a = document.querySelector(`#${location}`).scrollIntoView(false);
+      }, 0);
+    } else {
+      setTimeout(() => {
+        let a = document.querySelector(`#${location}`).scrollIntoView();
+        window.scrollBy(0, -60);
+      }, 0);
+    }
   }
 };
