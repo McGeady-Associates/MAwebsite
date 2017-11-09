@@ -1,11 +1,23 @@
+// import { anchorate } from 'anchorate'
+//
+// exports.onRouteUpdate = () => {
+//   console.log('inside onRouteChnage')
+//   anchorate()
+// }
+
+
+
+
+
+
+
+
 exports.onRouteUpdate = (location) => {
-  // console.log('location: ', location)
-  if (location.hash) {
-    // console.log('inside onRouteUpdate')
+  if (location.location.hash) {
+    location = location.location.hash.slice(2);
     setTimeout(() => {
-      document.querySelector(`${location.hash}`).scrollIntoView();
+      let a = document.querySelector(`#${location}`).scrollIntoView();
+      window.scrollBy(0, -70);
     }, 0);
-  } else {
-    // console.log('browser API, route change');
-  }
+  } else {}
 };

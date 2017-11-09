@@ -22,10 +22,10 @@ class Header extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
-            <NavItem eventKey={1} href="#">About Us</NavItem>
-            <NavItem eventKey={2} href="#">Services</NavItem>
-            <NavItem eventKey={3} href="#">Key Client Engagements</NavItem>
-            <NavItem eventKey={4} href="#">Contact Us</NavItem>
+            <NavItem eventKey={1} href="/#/AboutUsContainer">About Us</NavItem>
+            <NavItem eventKey={2} href="/#/ServicesContainer">Services</NavItem>
+            <NavItem eventKey={3} href="/#/ClientProjectsContainer">Key Client Engagements</NavItem>
+            <NavItem eventKey={4} href="/#/ContactUsContainer">Contact Us</NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
