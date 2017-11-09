@@ -4,7 +4,7 @@ import emailUsText from '../../static/text/emailUsText';
 const ContactUs = (props) => {
   return (
     <section id="ContactUsContainer"
-      className="bg-primary text-white text-center"
+      className="text-white text-center"
       style={{height: '30%'}}
     >
     <h1>

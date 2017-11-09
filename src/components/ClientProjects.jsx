@@ -5,7 +5,7 @@ import clientProjectsText from '../../static/text/clientProjectsText';
 const ClientProjects = (props) => {
   return (
     <section id="ClientProjectsContainer"
-      className="bg-primary text-white text-center"
+      className="text-white text-center"
       style={{height: '30%'}}
     >
     <h1 style={{display: 'flex', justifyContent: 'center'}}>

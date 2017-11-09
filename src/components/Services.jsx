@@ -4,8 +4,8 @@ import ServicesText from '../../static/text/servicesText';
 const Services = (props) => {
   return (
     <section id="ServicesContainer"
-      className="bg-primary text-white text-center"
-      style={{backgroundColor: '#b4c889', height: '30%'}}
+      className="text-white text-center"
+      style={{backgroundColor: 'rgba(57,68,6, 1)', height: '30%'}}
     >
     <h1 style={{display: 'flex', justifyContent: 'center'}}>
       McGeady & Associates Services
