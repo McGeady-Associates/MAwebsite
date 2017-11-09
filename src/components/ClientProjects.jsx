@@ -1,4 +1,5 @@
 import React from 'react';
+import { Carousel } from 'react-bootstrap';
 import ClientProjectsItem from './ClientProjectsItem.jsx';
 import clientProjectsText from '../../static/text/clientProjectsText';
 
@@ -11,16 +12,26 @@ const ClientProjects = (props) => {
       <h1 style={{display: 'flex', justifyContent: 'center'}}>
         Key Client Engagements
       </h1>
-      <div style={{display: 'flex', flex: '0 0 auto'}}>
-        <ClientProjectsItem title={clientProjectsText.egsk.title} details={clientProjectsText.egsk.details} />
-        <ClientProjectsItem title={clientProjectsText.nawl.title} details={clientProjectsText.nawl.details} />
-        <ClientProjectsItem title={clientProjectsText.mcca.title} details={clientProjectsText.mcca.details} />
-      </div>
-      <div style={{display: 'flex'}}>
-        <ClientProjectsItem title={clientProjectsText.neaf.title} details={clientProjectsText.neaf.details} />
-        <ClientProjectsItem title={clientProjectsText.aacedc.title} details={clientProjectsText.aacedc.details} />
-        <ClientProjectsItem title={clientProjectsText.ee.title} details={clientProjectsText.ee.details} />
-      </div>
+      <Carousel>
+        <Carousel.Item>
+          <ClientProjectsItem title={clientProjectsText.egsk.title} details={clientProjectsText.egsk.details} />
+        </Carousel.Item>
+        <Carousel.Item>
+          <ClientProjectsItem title={clientProjectsText.nawl.title} details={clientProjectsText.nawl.details} />
+        </Carousel.Item>
+        <Carousel.Item>
+          <ClientProjectsItem title={clientProjectsText.mcca.title} details={clientProjectsText.mcca.details} />
+        </Carousel.Item>
+        <Carousel.Item>
+          <ClientProjectsItem title={clientProjectsText.neaf.title} details={clientProjectsText.neaf.details} />
+        </Carousel.Item>
+        <Carousel.Item>
+          <ClientProjectsItem title={clientProjectsText.aacedc.title} details={clientProjectsText.aacedc.details} />
+        </Carousel.Item>
+        <Carousel.Item>
+          <ClientProjectsItem title={clientProjectsText.ee.title} details={clientProjectsText.ee.details} />
+        </Carousel.Item>
+      </Carousel>
     </section>
   )
 }
