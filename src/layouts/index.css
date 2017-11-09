@@ -93,7 +93,7 @@ kbd,
 pre,
 samp {
   font-family: monospace, monospace;
-  font-size: 1em;
+  font-size: 10em;
 }
 figure {
   margin: 1em 40px;
@@ -199,13 +199,14 @@ html {
 body {
   color: hsl(180, 100%, 96%);
   font-family: "Arial Narrow", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  font-size: 18px;
 }
 img {
   max-width: 100%;
@@ -401,7 +402,7 @@ pre {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.42;
   background: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
@@ -540,15 +541,15 @@ li > p {
   margin-bottom: calc(1.45rem / 2);
 }
 code {
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.45rem;
 }
 kbd {
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.45rem;
 }
 samp {
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.45rem;
 }
 abbr {

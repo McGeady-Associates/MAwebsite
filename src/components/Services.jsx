@@ -1,4 +1,5 @@
 import React from 'react';
+import { ListGroup, ListGroupItem } from 'react-bootstrap';
 import ServicesText from '../../static/text/servicesText';
 
 const Services = (props) => {
@@ -12,15 +13,22 @@ const Services = (props) => {
     </h1>
     <div style={{display: 'flex'}}>
       <div style={{flex: 8}}>
-        <ul>
+        <ListGroup>
           {
             ServicesText.map((service, index) => {
               return (
-                <li key={index}>{service}</li>
+                <ListGroupItem
+                  key={index}
+                  style={{backgroundColor: 'transparent', textAlign: 'left'}}
+                >
+                  {service}
+                </ListGroupItem>
               );
             })
           }
-        </ul>
+        </ListGroup>
+      </div>
+      <div style={{flex: 8}}>
       </div>
     </div>
     </section>
