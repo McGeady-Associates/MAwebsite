@@ -197,7 +197,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: hsl(180, 100%, 96%);
   font-family: "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -618,4 +618,8 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+section {
+  background-color: #7f8286;
 }

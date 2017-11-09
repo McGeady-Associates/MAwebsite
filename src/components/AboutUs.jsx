@@ -5,7 +5,7 @@ import PatriceBody from '../../static/img/PatriceBody.jpg';
 const AboutUs = (props) => {
   return (
     <section id="AboutUsContainer"
-      className="bg-primary text-white text-center"
+      className="text-white text-center"
       style={{height: '30%'}}
     >
     <h1 style={{display: 'flex', justifyContent: 'center'}}>
