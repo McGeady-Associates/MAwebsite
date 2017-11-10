@@ -1,5 +1,6 @@
 import React from 'react';
 import emailUsText from '../../static/text/emailUsText';
+import EmailForm from '../containers/EmailForm.jsx';
 
 const ContactUs = (props) => {
   return (
@@ -13,7 +14,7 @@ const ContactUs = (props) => {
     <div style={{display: 'flex'}}>
       <div>
         <p style={{marginBottom: 0}}>{emailUsText.address}</p>
-        <p>{emailUsText.contacts}</p>
+        <EmailForm />
       </div>
     </div>
     </section>
