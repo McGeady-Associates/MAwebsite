@@ -19,7 +19,7 @@ const ContactUs = (props) => {
       <div>
         <EmailForm />
       </div>
-      <div>
+      <div style={{marginTop: 20}}>
         <Footer />
       </div>
     </div>
