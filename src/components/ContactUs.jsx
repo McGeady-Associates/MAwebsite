@@ -13,8 +13,10 @@ const ContactUs = (props) => {
     </h1>
     <div style={{display: 'flex'}}>
       <div>
+        <div>
+          <EmailForm />
+        </div>
         <p style={{marginBottom: 0}}>{emailUsText.address}</p>
-        <EmailForm />
       </div>
     </div>
     </section>
