@@ -1,19 +1,26 @@
 import React from 'react';
 import emailUsText from '../../static/text/emailUsText';
+import EmailForm from '../containers/EmailForm.jsx';
+import Footer from '../components/Footer.jsx';
 
 const ContactUs = (props) => {
   return (
     <section id="ContactUsContainer"
-      className="text-white text-center"
-      style={{height: '30%'}}
+      className="text-white"
+      style={{height: '30%', padding: 25}}
     >
-    <h1>
+    <h1 className="text-center">
       Contact Us
     </h1>
-    <div style={{display: 'flex'}}>
+    <div style={{display: 'flex', flexDirection: 'column'}}>
       <div>
-        <p style={{marginBottom: 0}}>{emailUsText.address}</p>
-        <p>{emailUsText.contacts}</p>
+        <p className="text-center">{emailUsText.instructions}</p>
+      </div>
+      <div>
+        <EmailForm />
+      </div>
+      <div style={{marginTop: 20}}>
+        <Footer />
       </div>
     </div>
     </section>
