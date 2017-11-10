@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
+import { FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap';
 import FieldGroup from '../components/FieldGroup.jsx';
 
 class EmailForm extends Component {
@@ -9,8 +9,8 @@ class EmailForm extends Component {
 
   render() {
     return (
-      <div>
-        <form>
+      <div style={{display: 'flex', flex: 10, justifyContent: 'center', alignItems: 'center'}}>
+        <form style={{width: '50%'}}onSubmit={(e) => {e.preventDefault()}}>
           <FieldGroup
             id="fullNameText"
             type="text"
@@ -21,12 +21,21 @@ class EmailForm extends Component {
             id="EmailAddress"
             type="email"
             label="Email address"
-            placeholder="Enter email"
+            placeholder="Enter your email"
+          />
+          <FieldGroup
+            id="EmailSubject"
+            type="email"
+            label="Email Subject"
+            placeholder="Subject"
           />
           <FormGroup controlId="Textarea">
             <ControlLabel>Body</ControlLabel>
             <FormControl componentClass="textarea" placeholder="What would you like to tell us?" />
           </FormGroup>
+          <Button type="submit">
+            Submit
+          </Button>
         </form>
       </div>
     )
