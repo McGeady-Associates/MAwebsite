@@ -6,7 +6,6 @@ import imagePlcaeholder from '../../static/img/wireframe-image-placeholder.png';
 const Services = (props) => {
   return (
     <section id="ServicesContainer"
-      className="text-center"
       style={{backgroundColor: 'rgba(250, 250, 250, 1)', height: '30%'}}
     >
     <h1 style={{display: 'flex', justifyContent: 'center', color: '#95B100'}}>
